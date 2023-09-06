@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/destiny/static/css/main.7f8a887d.css",
+    "main.js": "/destiny/static/js/main.3e12be5c.js",
+    "static/media/logo.png": "/destiny/static/media/logo.bd9a3036d4d48e75fae9.png",
+    "index.html": "/destiny/index.html",
+    "main.7f8a887d.css.map": "/destiny/static/css/main.7f8a887d.css.map",
+    "main.3e12be5c.js.map": "/destiny/static/js/main.3e12be5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f8a887d.css",
+    "static/js/main.3e12be5c.js"
+  ]
+}
