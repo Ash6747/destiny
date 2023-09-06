@@ -1,0 +1,242 @@
+.App{
+    padding: 0 2rem;
+}
+p{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    width: 98%;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .webIcon{
+        
+        img{
+            height: 40px;
+            width: 40px; 
+        }
+        
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            margin-left: 1.2rem;
+        }
+    }
+    .appLink{
+        height: 1.5rem;
+        padding: 0.6rem 1rem;
+        background-color: black;
+        color: white;
+        border-radius: 1.3rem;
+    }
+}
+.home{
+    margin-top: 6.6rem;
+}
+.intro{
+    height: 75vh;
+    display: flex;
+    background-color: #eeebfe;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    text-align: left;
+    align-items: center;
+    margin-top: 5rem;
+    .headingContainer{
+        width: 30rem;
+        padding: 1.4rem;
+        #text1{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .heading{
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+        .ratingContainer{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .storeLogo{
+                height: 2.4rem;
+                padding: 0 0.8rem;
+                border-radius: 0.3rem;
+                display: flex;
+                align-items: center;
+                color: white;
+                background-color: black;
+                gap: 5px;
+                img{
+                    height: 24px;
+                    width: 24px;
+                }
+                p{
+                    font-size: 0.5rem;
+                }
+                span{
+                    font-weight: 500;
+                }
+            }
+            .stars{
+                img{
+                    height: 18px;
+                    width: 18px;
+                    margin-left: 10px;
+                }
+                div{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    
+}
+.iQContainer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .eQContainer{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        padding: 2rem 5rem;
+        .eQ{
+            font-size: 2rem;
+            font-weight: 600;
+            width: 40%;
+        }
+        .eqContentContainer{
+            display: flex;
+            flex-direction: row;
+            max-width: 60%;
+            gap: 2rem;
+            p{
+                max-width: 20rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    /* src/App.css */  
+    
+      
+    .cardCon{
+        text-align: left;
+        /* Hide the scrollbar */
+        .card-container::-webkit-scrollbar {
+            width: 0.1em; /* Adjust the width as needed */
+        }
+        
+        .card-container::-webkit-scrollbar-track {
+            background-color: transparent; /* Make the track transparent */
+        }
+        
+        .card-container::-webkit-scrollbar-thumb {
+            background-color: transparent; /* Hide the thumb */
+        }
+        
+        /* For Firefox */
+        .card-container {
+            scrollbar-width: none;
+        }
+        .container-title {
+            font-size: 24px;
+            opacity: 0;
+            animation: title-appear 1s ease-in-out forwards;
+          }
+          
+          @keyframes title-appear {
+            0% {
+              opacity: 1;
+              font-size: 0;
+            }
+            100% {
+              opacity: 1;
+              font-size: 2rem; /* Adjust the final font size as needed */
+            }
+          }          
+  
+        .card-container {
+            display: flex;
+            overflow-x: auto; /* Use auto to enable horizontal scrolling only when necessary */
+            white-space: nowrap;
+            padding: 20px;
+
+            .card {
+                flex: 0 0 auto;
+                width: 300px;
+                margin-right: 20px;
+                border-radius: 8px;
+                padding: 10px;
+                box-sizing: border-box; /* Include padding and border in the width */
+                overflow: hidden; /* Hide overflowing content */
+                .emoji {
+                    font-size: 24px;
+                    margin-bottom: 10px; /* Add margin to separate emoji from other content */
+                }
+                
+                .title {
+                    font-size: 18px;
+                    margin-top: 10px;
+                    white-space: normal; /* Allow title text to wrap to the next line if needed */
+                    overflow: hidden; /* Hide overflowing title text */
+                }
+                
+                .description {
+                    font-size: 14px;
+                    white-space: normal; /* Allow description text to wrap to the next line if needed */
+                    overflow: hidden; /* Hide overflowing description text */
+                }
+            }
+        }
+    }
+}
+.built{
+    height: 65vh;
+    display: flex;
+    background-color: #fef7f1;
+    border-radius: 2rem;
+    justify-content: space-around;
+    padding: 4.5rem;
+    text-align: left;
+    margin-top: 5rem;
+    .builtHeadingContainer{
+        margin-top: 2rem;
+        #text1{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .heading{
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+    }
+    .builtDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        p{
+            font-size: 1.5rem;
+            max-width: 32rem;
+        }
+    }
+}
+.leaf{
+height: 0.5rem;
+background-color: black;
+}
